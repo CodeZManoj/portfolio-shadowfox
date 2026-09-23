@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Manoj Kumar - Full Stack Developer specializing in Node.js, Express, MongoDB, REST APIs, and Modern Web Development.">
+  <meta name="keywords" content="Manoj Kumar, Full Stack Developer, Node.js, Express, MongoDB, REST APIs, Web3, Portfolio, ShadowFox">
+  <meta name="author" content="Manoj Kumar">
+  <title>Manoj Kumar | Full Stack Developer Portfolio</title>
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Manoj Kumar Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Manoj<span class="highlight">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Education &amp; Badges</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary header-cta">Hire Me</a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <span class="logo-text">Manoj<span class="highlight">.dev</span></span>
+      <button id="drawer-close" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#home" class="drawer-link active">Home</a></li>
+      <li><a href="#about" class="drawer-link">About</a></li>
+      <li><a href="#skills" class="drawer-link">Skills</a></li>
+      <li><a href="#projects" class="drawer-link">Projects</a></li>
+      <li><a href="#experience" class="drawer-link">Education &amp; Badges</a></li>
+      <li><a href="#contact" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-block">Get In Touch</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- 1. HOME / INTRODUCTION SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot"></span> Seeking Full Stack / Backend Internship
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Manoj Kumar</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I am a <span class="typing-text" id="typing-text">Full Stack Developer</span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            B.Tech CSE student at Narula Institute of Technology (CGPA: 8.05) with expertise in Full Stack Development, Node.js REST APIs, MongoDB, and Web3 technologies. Active open-source contributor and Hacktoberfest achiever.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <div class="social-links-bar">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/CodeZManoj" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com/in/manojkumar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:manojkumardav2004@gmail.com" class="social-icon" aria-label="Direct Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">manoj_dev.json</span>
+            </div>
+            <pre class="terminal-body"><code><span class="keyword">{</span>
+  <span class="property">"name"</span>: <span class="string">"Manoj Kumar"</span>,
+  <span class="property">"role"</span>: <span class="string">"Full Stack Developer"</span>,
+  <span class="property">"education"</span>: <span class="string">"B.Tech CSE @ Narula Inst. (8.05)"</span>,
+  <span class="property">"stack"</span>: [
+    <span class="string">"Node.js"</span>, <span class="string">"Express"</span>, <span class="string">"MongoDB"</span>,
+    <span class="string">"JavaScript"</span>, <span class="string">"REST APIs"</span>, <span class="string">"Web3"</span>
+  ],
+  <span class="property">"openSource"</span>: <span class="string">"Hacktoberfest 2025 Achiever"</span>,
+  <span class="property">"location"</span>: <span class="string">"Kolkata, India"</span>
+<span class="keyword">}</span></code></pre>
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">🎃</span> Hacktoberfest 2025 Contributor
+            </div>
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon">⚡</span> CGPA 8.05 | Narula Tech
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Developer Mindset &amp; Foundation</h2>
+          <p class="section-description">A passionate engineer bridging backend logic, intuitive frontend design, and open-source contributions.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <h3 class="about-headline">Building reliable backend architectures &amp; accessible user experiences.</h3>
+            <p>
+              I am a Computer Science Engineering undergraduate (2024–2028) at <strong>Narula Institute of Technology</strong> with a strong academic record (CGPA: 8.05). My core passion lies in Full Stack Development, robust backend API architecture, database management, and emerging technologies like Web3 and AI.
+            </p>
+            <p>
+              I believe in learning through practical execution and community participation. Having contributed actively to open-source initiatives and earned the official <strong>Hacktoberfest 2025 Contributor</strong> distinction, I know how to collaborate with Git/GitHub, review code, submit pull requests, and maintain clean software documentation.
+            </p>
+
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">8.05</span>
+                <span class="stat-label">B.Tech CGPA</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Core Projects</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">Hacktoberfest</span>
+                <span class="stat-label">2025 Contributor</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100 Days</span>
+                <span class="stat-label">Code Completed</span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary">Let's Connect</a>
+              <a href="https://github.com/CodeZManoj" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Visit GitHub</a>
+            </div>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">⚙️</div>
+              <div class="pillar-info">
+                <h4>Backend &amp; REST APIs</h4>
+                <p>Architecting modular CRUD endpoints, authentication workflows, request validation, and middlewares using Node.js and Express.</p>
+              </div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon">🎨</div>
+              <div class="pillar-info">
+                <h4>Frontend &amp; Responsive UI</h4>
+                <p>Creating responsive layouts using semantic HTML5, modern CSS3 (Flexbox &amp; Grid), and vanilla JavaScript with mobile-first adaptability.</p>
+              </div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon">🗄️</div>
+              <div class="pillar-info">
+                <h4>Database Architecture</h4>
+                <p>Modeling documents and relational schemas with MongoDB and MySQL, optimizing queries and ensuring data integrity.</p>
+              </div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon">🌐</div>
+              <div class="pillar-info">
+                <h4>Open Source &amp; Web3</h4>
+                <p>Active open-source collaboration via PRs, issues, documentation, and smart contract development using Solidity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS & TOOLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-description">Proficiencies directly developed through university coursework, bootcamps, and real-world projects.</p>
+        </div>
+
+        <!-- Programming Languages Proficiency Bars -->
+        <div class="proficiency-container">
+          <h3 class="subsection-title">Core Language Competence</h3>
+          <div class="skill-bars-grid">
+            <div class="bar-group">
+              <div class="bar-label">
+                <span>Node.js / Express</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="bar-group">
+              <div class="bar-label">
+                <span>JavaScript (ES6+)</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="bar-group">
+              <div class="bar-label">
+                <span>Python</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="bar-group">
+              <div class="bar-label">
+                <span>MongoDB / Databases</span>
+                <span>75%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 75%;"></div></div>
+            </div>
+            <div class="bar-group">
+              <div class="bar-label">
+                <span>C / C++</span>
+                <span>70%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="bar-group">
+              <div class="bar-label">
+                <span>HTML5 / CSS3 Responsive UI</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Category 1: Languages & Core -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon frontend-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="category-title">Languages &amp; Core</h3>
+            </div>
+            <p class="category-desc">Algorithmic foundations and object-oriented programming.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="tag-bullet"></span>JavaScript (ES6+)</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Python</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>C</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>C++</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Data Structures &amp; Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon backend-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3 class="category-title">Backend &amp; APIs</h3>
+            </div>
+            <p class="category-desc">Server-side execution, REST protocols, and business logic.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="tag-bullet"></span>Node.js</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Express.js</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>RESTful APIs</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>CRUD Operations</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Middleware Architecture</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>JSON Web Tokens</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend & UI -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon frontend-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <h3 class="category-title">Frontend &amp; Responsive UI</h3>
+            </div>
+            <p class="category-desc">Semantic, accessible, and device-responsive interfaces.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="tag-bullet"></span>HTML5</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>CSS3 / SASS</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Flexbox &amp; CSS Grid</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Responsive Layouts</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>DOM Manipulation</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Fetch API / AJAX</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases & Developer Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon tools-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3 class="category-title">Databases &amp; Tools</h3>
+            </div>
+            <p class="category-desc">Modern workflows, storage, and developer tooling.</p>
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="tag-bullet"></span>MongoDB</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>MySQL</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Git &amp; GitHub</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Postman</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>VS Code</span>
+              <span class="skill-tag"><span class="tag-bullet"></span>Solidity / Web3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects &amp; Implementations</h2>
+          <p class="section-description">Practical systems and client solutions demonstrating end-to-end full stack competence.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="backend">Backend &amp; Full Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend &amp; APIs</button>
+          <button class="filter-btn" data-filter="web3">Web3 &amp; Smart Contracts</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: User Management System -->
+          <article class="project-card" data-category="backend">
+            <div class="project-banner project-banner-1">
+              <div class="project-badge">Full Stack / Backend</div>
+              <div class="project-preview-mockup">
+                <span class="mockup-icon">👥</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">User Management System</h3>
+              <p class="project-summary">
+                A robust full-stack user management platform engineered with Node.js, Express, and MongoDB. Implements complete CRUD operations, secure password hashing, schema validation, and REST API endpoints.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">CRUD</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CodeZManoj" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source Code
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Weather Monitoring Dashboard -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-banner project-banner-2">
+              <div class="project-badge">Frontend &amp; API</div>
+              <div class="project-preview-mockup">
+                <span class="mockup-icon">🌦️</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Weather Monitoring Dashboard</h3>
+              <p class="project-summary">
+                An interactive weather monitoring web app communicating with live weather APIs to provide real-time meteorological metrics, geolocation detection, forecast visualizations, and error-handled UI states.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Real-time API</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CodeZManoj" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source Code
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: HalloApp (Web3) -->
+          <article class="project-card" data-category="web3">
+            <div class="project-banner project-banner-3">
+              <div class="project-badge">Web3 / Blockchain</div>
+              <div class="project-preview-mockup">
+                <span class="mockup-icon">⛓️</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">HalloApp (Web3 Decentralized Savings)</h3>
+              <p class="project-summary">
+                A decentralized savings protocol built using Solidity smart contracts. Solves trustless periodic savings pools, automated interest distributions, and wallet connection security.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Solidity</span>
+                <span class="tag">Smart Contracts</span>
+                <span class="tag">Web3</span>
+                <span class="tag">Ethereum</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CodeZManoj" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source Code
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: KarmaGap -->
+          <article class="project-card" data-category="web3">
+            <div class="project-banner project-banner-4">
+              <div class="project-badge">Web3 / Open Source</div>
+              <div class="project-preview-mockup">
+                <span class="mockup-icon">🌐</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">KarmaGap - Contribution Gap Resolver</h3>
+              <p class="project-summary">
+                A Web3 project designed to solve attribution and reward gaps for open source builders. Features transparent contribution attestation, milestone tracking, and reputation metrics.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Web3</span>
+                <span class="tag">Open Source</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Smart Contracts</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/CodeZManoj" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Source Code
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION, CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic &amp; Recognition</span>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-description">Formal academic qualifications, verified coursework, and community recognition.</p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Education Timeline -->
+          <div class="timeline-column">
+            <h3 class="subsection-title">Academic Background</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-period">2024 &ndash; 2028</span>
+                  <h4 class="timeline-title">B.Tech in Computer Science and Engineering</h4>
+                  <div class="timeline-org">Narula Institute of Technology</div>
+                  <p class="timeline-detail"><strong>CGPA: 8.05</strong> &bull; Core coursework in Data Structures, Algorithms, Database Management, and Full Stack Development.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-period">2021 &ndash; 2023</span>
+                  <h4 class="timeline-title">Higher Secondary (12th Grade)</h4>
+                  <div class="timeline-org">SKM College</div>
+                  <p class="timeline-detail">Score: 66.8% &bull; Focus in Science &amp; Mathematics fundamentals.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-period">2020 &ndash; 2021</span>
+                  <h4 class="timeline-title">Secondary Education (10th Grade)</h4>
+                  <div class="timeline-org">Vidya Vikash High School</div>
+                  <p class="timeline-detail">Score: <strong>91.7%</strong> &bull; Distinction in Mathematics and Science.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications & Open Source Badges -->
+          <div class="certifications-column">
+            <h3 class="subsection-title">Certifications &amp; Achievements</h3>
+            
+            <div class="cert-cards">
+              <div class="cert-card">
+                <div class="cert-badge-icon">🎃</div>
+                <div class="cert-details">
+                  <h4>Hacktoberfest 2025 Contributor</h4>
+                  <p>Successfully submitted approved PRs to global open-source repositories; earned official contributor honors.</p>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-badge-icon">📜</div>
+                <div class="cert-details">
+                  <h4>100 Days of Code</h4>
+                  <p>Comprehensive 100-day immersion into Python, C++, and Data Structures &amp; Algorithms problem solving.</p>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-badge-icon">🚀</div>
+                <div class="cert-details">
+                  <h4>Full Stack Development Bootcamp</h4>
+                  <p>Extensive curriculum covering modern frontend engineering, Node.js/Express, RESTful APIs, and databases.</p>
+                </div>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-badge-icon">🐙</div>
+                <div class="cert-details">
+                  <h4>Git &amp; GitHub Essentials</h4>
+                  <p>Mastery of version control, branching strategies, collaborative workflows, and repository management.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION WITH PROPER VALIDATION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-description">Seeking Summer 2026 Full Stack or Backend Developer internships. Drop a message below!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-panel">
+            <h3 class="info-title">Contact Information</h3>
+            <p class="info-text">
+              I am actively seeking <strong>Full Stack Developer Intern</strong> and <strong>Backend Developer Intern (Node.js, REST APIs)</strong> opportunities. Feel free to contact me directly!
+            </p>
+
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div class="info-label">Email</div>
+                  <a href="mailto:manojkumardav2004@gmail.com" class="info-value">manojkumardav2004@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <div class="info-label">Phone</div>
+                  <a href="tel:+916290698431" class="info-value">+91 6290698431</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <div class="info-label">Location</div>
+                  <span class="info-value">Kolkata, India</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div>
+                  <div class="info-label">GitHub</div>
+                  <a href="https://github.com/CodeZManoj" target="_blank" rel="noopener noreferrer" class="info-value">github.com/CodeZManoj</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-socials">
+              <span class="social-label">Profiles:</span>
+              <div class="social-links-bar">
+                <a href="https://github.com/CodeZManoj" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/manojkumar" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:manojkumardav2004@gmail.com" class="social-icon" aria-label="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with Validation -->
+          <div class="contact-form-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="user_name">Full Name <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <input 
+                      type="text" 
+                      id="user_name" 
+                      name="name" 
+                      placeholder="e.g. Rahul Sharma" 
+                      autocomplete="name"
+                      required
+                    >
+                    <span class="validation-icon" aria-hidden="true"></span>
+                  </div>
+                  <span class="field-error-msg" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="user_email">Email Address <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <input 
+                      type="email" 
+                      id="user_email" 
+                      name="email" 
+                      placeholder="e.g. recruiter@company.com" 
+                      autocomplete="email"
+                      required
+                    >
+                    <span class="validation-icon" aria-hidden="true"></span>
+                  </div>
+                  <span class="field-error-msg" id="email-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="user_subject">Subject <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="user_subject" 
+                    name="subject" 
+                    placeholder="e.g. Full Stack Developer Internship Inquiry" 
+                    required
+                  >
+                  <span class="validation-icon" aria-hidden="true"></span>
+                </div>
+                <span class="field-error-msg" id="subject-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="user_message">Message <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <textarea 
+                    id="user_message" 
+                    name="message" 
+                    rows="5" 
+                    placeholder="Hi Manoj, I saw your portfolio and would like to discuss an opportunity..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-hint-row">
+                  <span class="field-error-msg" id="message-error" aria-live="polite"></span>
+                  <span class="char-counter" id="char-counter">0 / 500</span>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                <span class="btn-text">Send Message</span>
+                <span class="spinner" aria-hidden="true"></span>
+                <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+
+            <!-- Success Alert Banner (Hidden by default) -->
+            <div id="form-success-banner" class="form-feedback success" role="alert" style="display: none;">
+              <div class="feedback-icon">✓</div>
+              <div class="feedback-text">
+                <strong>Thank you!</strong> Your message has been sent successfully to Manoj Kumar. I'll get back to you within 24 hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="logo-symbol">&lt;/&gt;</span>
+          <span class="logo-text">Manoj<span class="highlight">.dev</span></span>
+        </a>
+        <p class="footer-tagline">Full Stack Developer &bull; Node.js, Express, MongoDB, REST APIs, &amp; Web3.</p>
+      </div>
+      <div class="footer-center">
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <p class="copyright">&copy; <span id="current-year"></span> Manoj Kumar. ShadowFox Internship Portfolio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>
