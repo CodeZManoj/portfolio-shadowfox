@@ -15,6 +15,7 @@ This repository contains the official **Beginner Level Personal Portfolio Websit
 - **Role:** Full Stack Developer / Backend Developer
 - **Target Internship:** Summer 2026 Full Stack / Backend Developer Intern
 - **GitHub:** [github.com/CodeZManoj](https://github.com/CodeZManoj)
+- **LinkedIn:** [Manoj Kumar](https://www.linkedin.com/in/manoj-kumar-677b1426a?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 - **Email:** [manojkumardav2004@gmail.com](mailto:manojkumardav2004@gmail.com)
 
 ---
